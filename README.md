@@ -144,22 +144,9 @@ The project showcases:
 
 ---
 
-## How to Use
-
-### Clone the Repository
 
 
-git clone https://github.com/shreyanshshhivam/24BHI10059-SHREYANSH-SHIVAM.git
-Navigate to the Repository
-cd 24BHI10059-SHREYANSH-SHIVAM
-Open Notebooks
-
-Launch Jupyter Notebook and open the required notebook files.
-
-jupyter notebook
-Documentation
-
-The repository contains:
+## The repository contains:
 
 Assignment Reports (PDF)
 Practical Task Files
@@ -169,10 +156,10 @@ Supporting Documentation
 
 These documents provide detailed explanations of the tasks completed during the training program.
 
-Acknowledgements
+## Acknowledgements
 
 This repository was created as part of the FacePrep MongoDB Database Administrator Certification Training Program and serves as a collection of coursework, assignments, practical implementations, and project submissions.
 
-License
+## License
 
 This repository is maintained for educational and academic purposes.
