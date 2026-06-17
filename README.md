@@ -16,7 +16,6 @@ The repository demonstrates concepts related to:
 - Jupyter Notebook-based Experiments
 - Project Documentation and Reports
 
-Repository: :contentReference[oaicite:0]{index=0}
 
 ---
 
