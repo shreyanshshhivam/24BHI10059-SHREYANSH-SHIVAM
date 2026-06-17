@@ -1,0 +1,140 @@
+SHREYANSH SHIVAM 24BHI10059
+
+Q1
+db.employees.insertOne({
+    empId: 106,
+    name: "Meera",
+    age: 27,
+    department: "Marketing",
+    salary: 52000,
+    city: "Hyderabad",
+    experience: 4,
+    skills: ["SEO", "Content Writing"],
+    active: true
+});
+Q2
+db.employees.insertMany([
+{
+    empId: 107,
+    name: "Vikram",
+    age: 29,
+    department: "IT",
+    salary: 62000,
+    city: "Pune",
+    experience: 6,
+    skills: ["Java", "Spring Boot"],
+    active: true
+},
+{
+    empId: 108,
+    name: "Ananya",
+    age: 24,
+    department: "HR",
+    salary: 48000,
+    city: "Kolkata",
+    experience: 2,
+    skills: ["Recruitment"],
+    active: true
+}
+]);
+Q3
+db.employees.findOne({ department: "IT" });
+Q4
+db.employees.find();
+Q5
+db.employees.find(
+    {},
+    { _id: 0, name: 1, salary: 1 }
+);
+Q6
+db.employees.find({
+    salary: 50000
+});
+Q7
+db.employees.find({
+    salary: { $lt: 60000 }
+});
+Q8
+db.employees.find({
+    salary: { $gte: 60000 }
+});
+Q9
+db.employees.find({
+    age: { $ne: 30 }
+});
+Q10
+db.employees.find({
+    city: { $in: ["Chennai", "Mumbai"] }
+});
+Q11
+db.employees.find({
+    city: { $ne: "Chennai" }
+});
+Q12
+db.employees.find({
+    department: "IT",
+    salary: { $gt: 50000 }
+});
+
+Q13
+db.employees.find({
+    city: { $in: ["Chennai", "Bangalore"] }
+});
+Q14
+db.employees.find({
+    salary: { $not: { $gt: 60000 } }
+});
+Q15
+db.employees.find({
+    department: { $nin: ["IT", "HR"] }
+});
+Q16
+db.employees.find({
+    experience: { $exists: true }
+});
+Q17
+db.employees.find({
+    salary: { $type: "int" }
+});
+Q18
+db.employees.find({
+    skills: "MongoDB"
+});
+Q19
+db.employees.find({
+    skills: { $all: ["MongoDB", "AWS"] }
+});
+Q20
+db.employees.find({
+    skills: { $size: 3 }
+});
+Q21
+db.employees.find({
+    skills: {
+        $elemMatch: { $eq: "Java" }
+    }
+});
+Q22
+db.employees.find().sort({
+    salary: -1
+});
+Q23
+db.employees.find()
+.sort({ salary: -1 })
+.limit(3);
+Q24
+db.employees.updateOne(
+    { empId: 101 },
+    {
+        $inc: { salary: 5000 }
+    }
+);
+Q25
+db.employees.updateMany(
+    { department: "IT" },
+    {
+        $mul: { salary: 1.1 }
+    }
+);
+
+ 
